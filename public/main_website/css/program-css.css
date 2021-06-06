@@ -311,7 +311,7 @@ td {
     border-left: 1px solid #FF6700;
     position: relative;
     height: 8px;
-    cursor: pointer;
+    user-select: none; 
     padding:2px;
     font-size: 0.8em;
     
