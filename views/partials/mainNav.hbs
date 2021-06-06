@@ -1,0 +1,50 @@
+ <!-- Δημιουργία του Νavbar -->
+    <nav class="navbar">
+             <div class="logo">
+                  <a href="/">
+                    <img class="logo-img" src="/images/logo.png" alt="K1danaos">
+                  </a>
+            </div>
+            <ul class="navlist" id="navilist">
+               <li>
+                    <a href="/" id="colorHome">Αρχική</a>
+                </li>
+                <li>
+                    <a href="/about-html" id="colorAbout" >Σχετικά</a>
+                </li>
+                <li>
+                    <a href="/services-html"id="colorServices">Υπηρεσίες</a>
+                </li>
+                <li>
+                    <a href="/program-html" id="colorProgram">Πρόγραμμα</a>
+                </li>
+                <li>
+                    <a href="/subscriptions-html" id="colorSub">Συνδρομή</a>
+                </li>
+                <li>
+                    <a href="/contactus-html" id="colorContactus">Επικοινωνία</a>
+                </li>
+                <li>
+                    <a href="/signin-html" id="colorSignIn">Σύνδεση</a>
+                </li>
+                
+            </ul>
+            <!-- Δημιουργία του κουμπιού για το mobile menu το οποίο θα αντικαθιστά το navbar απο κάποιο μέγεθος οθόνης και κάτω  -->
+            <div class="mobile-menu" id="toggleButton">
+                <i class="fa fa-bars" aria-hidden="true" style="color: white;"></i>
+            </div>
+    </nav>
+
+    <!--To navbar για το mobile menu όταν ο χρήστης δέν είναι συνδεδεμένος-->
+    <div id="myNav" class="overlay" >
+        <a href="javascript:void(0)" class="closebtn" id="closebutton" >&times;</a> <!--Κουμπί εξόδου απο το navbar για το mobile menu-->
+        <div class="overlay-content">
+            <a href="/">Αρχική</a>
+            <a href="/about-html">Σχετικά</a>
+            <a href="/services-html">Υπηρεσίες</a>
+            <a href="/program-html">Πρόγραμμα</a>
+            <a href="/subscriptions-html">Συνδρομή</a>
+            <a href="/contactus-html">Επικοινωνία</a>
+            <a href="/signin-html">Σύνδεση</a>
+        </div>
+    </div>

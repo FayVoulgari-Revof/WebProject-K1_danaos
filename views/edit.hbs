@@ -1,0 +1,67 @@
+<section class="basic">
+    <h2>Επεξεργασία</h2>
+
+</section>
+
+
+<div id="edit">
+
+    <form id="form1">
+        <fieldset>
+            <legend>Στοιχεία χρήστη</legend>
+            <div class="input-container email">
+                <label for="email">Αλλαγή Εmail</label>
+                <input id="newEmail" name="email" type="email" placeholder="Nέα διεύθυνση email">
+            </div>
+            <div class="input-container phone">
+                <label for="phone">Αλλαγή τηλεφώνου</label>
+                <input id="newPhone" name="phone" type="tel" placeholder="Nέος αριθμός τηλεφώνου" pattern="\d{10}">
+            </div>
+            <div class="input-container password">
+                <label for="insertPass">Επαλήθευση κωδικού για αποθήκευση</label>
+                <input id="insertPass" name="password" type="password" required>
+            </div>
+            <!--Ολοκλήρωση επεξεργασίας-->
+            <div id="alignBtn">
+                <button id='editProfile' class="save-btn">Αποθήκευση αλλαγών</button>
+
+            </div>
+        </fieldset>
+    </form>
+    <form>
+
+        <fieldset>
+            <legend>Κωδικός χρήστη</legend>
+            <div class="input-container password">
+                <label for="password">Τρέχων Κωδικός</label>
+                <input id="password" name="password" type="password" required>
+            </div>
+            <div class="input-container password">
+                <label for="passwordnew">Νέος Κωδικός</label>
+                <input id="passwordnew" name="password" type="password" required>
+                <span class="fas fa-eye-slash errspan" id="newPass" style="cursor: pointer;"></span>
+
+            </div>
+
+            <div class="input-container password">
+                <label for="passwordRepeat">Επιβεβαίωση νέου κωδικού</label>
+                <input id="passwordRepeat" name="passwordr" type="password" required>
+                <span class="fas fa-eye-slash errspan" id="newPassRpt" style="cursor: pointer;"></span>
+
+            </div>
+
+            <!--Ολοκλήρωση επεξεργασίας-->
+            <div id="alignBtn">
+                <button id='changePass' class="save-btn">Αποθήκευση νέου κωδικού</button>
+
+            </div>
+
+        </fieldset>
+
+
+
+    </form>
+
+</div>
+
+<script src="user/js-files/user-edit-js.js"></script>

@@ -1,0 +1,44 @@
+ <!-- Δημιουργία του Νavbar -->
+    <nav class="navbar">
+             <div class="logo">
+                  <a href="/">
+                    <img class="logo-img" src="/images/logo.png" alt="K1danaos">
+                  </a>
+            </div>
+            <ul class="navlist" id="navilist">
+                <li>
+                    <a href="/"id="colorUserList">Λίστα χρηστών</a>
+                </li>
+                <li>
+                    <a href="/statistics" id="colorStats" >Στατιστικά</a>
+                </li>
+                <li>
+                    <!--Δημιουργία του dropdown menu για το προφίλ του χρήστη-->
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Διαχειριστής 
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                          <a href="/editProfile" style="color: black;" id="colorEdit">Επεξεργασία</a>
+                         <a id="logout" href="/logout" >Αποσύνδεση</a> 
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+            <!-- Δημιουργία του κουμπιού για το mobile menu το οποίο θα αντικαθιστά το navbar απο κάποιο μέγεθος οθόνης και κάτω  -->
+            <div class="mobile-menu" id="toggleButton">
+                <i class="fa fa-bars" aria-hidden="true" style="color: white;"></i>
+            </div>
+    </nav>
+
+    <!--To navbar για το mobile menu όταν ο χρήστης δέν είναι συνδεδεμένος-->
+    <div id="myNav" class="overlay" >
+        <a href="javascript:void(0)" class="closebtn" id="closebutton" >&times;</a> <!--Κουμπί εξόδου απο το navbar για το mobile menu-->
+        <div class="overlay-content">
+            <a href="/">Λίστα χρηστών</a>
+            <a href="/statistics">Στατιστικά</a>
+            <a href="/editProfile">Επεξεργασία</a>
+          <a href="/logout">Αποσύνδεση</a>
+        </div>
+    </div>

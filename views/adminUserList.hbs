@@ -1,0 +1,62 @@
+<div class="container">
+  <table class="table">
+    <thead>
+
+      <tr>
+        <th>
+          <span class="long">Όνομα</span>
+          <span class="short">Ον.</span>
+        </th>
+        <th>
+          <span class="long">Επώνυμο</span>
+          <span class="short">Επ.</span>
+        </th>
+        <th>
+          <span class="long">Email</span>
+          <span class="short">Email </span>
+        </th>
+        <th>
+          <span class="long">Τηλέφωνο</span>
+          <span class="short">Tηλ.</span>
+        </th>
+        <th>
+          <span class="long">Συνδρομές</span>
+          <span class="short">Συνδ.</span>
+        </th>
+      </tr>
+
+
+    </thead>
+
+
+    <tbody id="user-list">
+      {{#each userList}}
+      <tr>
+        <td>
+          <p>{{this.onoma}}</p>
+        </td>
+        <td>
+          <p>{{this.epwnumo}}</p>
+        </td>
+        <td>
+          <p>{{this.email}}</p>
+        </td>
+        <td>
+          <p>{{this.phone}}</p>
+        </td>
+        <td>
+          <p style="word-break: normal;"> {{#each this.syndromes}} {{this}} {{#unless @last}}, {{/unless}} {{/each}}</p>
+        </td>
+
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+
+
+</div>
+<!--Κουμπί για επιστροφή στην κορυφή-->
+<button id="topBtn" title="Go to top">Top</button>
+
+<script src="admin/js/adminUserList.js"></script>

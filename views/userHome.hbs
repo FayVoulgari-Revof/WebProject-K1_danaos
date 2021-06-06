@@ -1,0 +1,39 @@
+<div class="content-wrapper">
+
+  <!--Στην κανονική προβολή (για pc) χωρίζουμε την σελίδα σε δύο μέρη, 
+αριστερά έχουμε ενημερωτικό κείμενο ενώ δεξιά έχουμε το menu επιλογών του χρήστη -->
+  <div class="split-screen">
+    <div class="left">
+      <section class="basic">
+        <h1>Καλώς ήρθες <p style="display: inline;font-weight:700;color:purple"> {{#if userEmail}} {{userEmail}} {{/if}}
+          </p>!</h1>
+        <p>Μαζί θα δουλέψουμε για να επιτύχεις τους προσωπικούς σου στόχους.</p>
+      </section>
+    </div>
+    <!--Το menu επιλογών του χρήστη-->
+    <div class="right">
+      <div class="box-menu">
+        <div class="card">
+          <h2>Θέσε τους δικούς σου προσωπικούς στόχους.</h2>
+          <a href="/user-goals-html" class="btn"> Προβολή</a>
+        </div>
+
+        <div class="card">
+          <h2>Δές το εβδομαδιαίο πρόγραμμα με βάση τα τμήματά σου.</h2>
+          <a href="/program-html" class="btn">Προβολή</a>
+        </div>
+        <div class="card">
+          <h2>Αγόρασε την συνδρομή σου με ένα κλικ.</h2>
+          <a href="/subscriptions-html" class="btn">Προβολή</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+<script src="user/js-files/user-home-js.js">
+
+</script>

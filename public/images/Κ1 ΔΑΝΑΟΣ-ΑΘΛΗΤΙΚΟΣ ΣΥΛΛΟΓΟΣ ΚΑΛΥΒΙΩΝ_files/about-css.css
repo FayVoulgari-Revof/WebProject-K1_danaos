@@ -1,0 +1,398 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/training-828726_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+
+  .infoBar {
+    background-color: #FF6700;
+    padding: 0.5em;   
+} 
+.infoBar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+  
+.infoBar a {
+    color: #fff;
+    padding: .5em ;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.navbar {
+    position:sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.navlist {
+    list-style-type: none;
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:coral;
+}
+.logo-img {
+    height: 80px;
+    vertical-align: middle;
+}
+
+.myfooter {
+    display: flex;
+    position: sticky;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    position: center;
+    text-align: center;
+    font-size: large;
+    color: white;
+    margin: auto;
+    /* margin-left: 400px;
+    margin-right: 400px; */
+}
+/*#############################################################################################################################################*/
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*#############################################################################################################################################*/
+.syllogos{
+    font-family: sans-serif;
+    font-size: medium;
+    width: 40%;
+    margin: auto;
+    margin-top: 10em;
+    margin-left: 2em;
+    float: left;
+    /* justify-content: center;
+    text-align: center; */
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+    /* margin-bottom: 50px; */
+}
+
+.syllogos thead th{
+    background: #FF6700;
+    color: white;
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+.syllogos tbody{
+    background: black;
+    opacity: 0.6;
+    color: white;
+}
+
+.syllogos tbody th{
+    font-weight: 100;
+}
+
+.PhotoGallery{
+    font-family: sans-serif;
+    font-size: medium;
+    width: 50%;
+    margin: 0 auto;
+    /* justify-content: center;
+    text-align: center; */
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+    /* margin-bottom: 50px; */
+}
+
+.PhotoGallery thead th{
+    background: #FF6700;
+    color: white;
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+.PhotoGallery tbody div{
+    background: black;
+    color: white;
+}
+
+.myfooter {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+.mobile-menu {
+    display: none;
+}
+@media all and (max-width: 950px){
+    .myfooter {
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navlist li {
+        display: block;
+        border-bottom: 1px solid coral;
+    }
+    .navlist {
+        text-align: center; 
+        padding-top: 10px; 
+        display:none;
+        
+    }
+ 
+    .logo {
+        width: 100%;
+        height: 40%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .active {
+        display: block;
+    }
+    
+    
+
+    
+}
+
+
+.overlay-content li{
+    text-decoration: none;
+    display: block
+  
+
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+   
+  }
+  .overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 400px;
+    border-bottom: 1px solid coral;
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-menu {
+    display: none;
+}
+@media all and (max-width: 950px){
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navlist li {
+        display: block;
+        border-bottom: 1px solid coral;
+    }
+    .navlist {
+        text-align: center; 
+        padding-top: 10px; 
+        display:none;
+        
+    }
+    .logo {
+        width: 100%;
+        height: 40%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .active {
+        display: block;
+    }
+    .myfooter {
+        display: flex;
+        position: absolute;
+        height: 85px;
+        width: 100%;
+        bottom: 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+@media (max-width: 500px) {
+    .syllogos{
+        float: initial;
+        font-family: sans-serif;
+        font-size: medium;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 2em;
+        margin-bottom: 3em;
+    }
+
+    .PhotoGallery{
+        width: 75%;
+    }
+}
+    
+
+    
+}

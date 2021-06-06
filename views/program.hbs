@@ -1,0 +1,411 @@
+
+   
+
+    <!--Checkboxes για να επιλέξει ο χρήστης ποιά προγράμματα να φαίνονται στο πρόγραμμά του -->
+   {{#if user}}
+    <div class="choices">    
+      <h2>Επιλέξτε τα τμήματά σας. </h2>
+          
+      <form action="none" method="post" id="choices-form">
+        <ul class="list">
+          <li>
+          <div class="input-box">
+              <label for="trx">TRX</label>
+              <input type="checkbox" id="trx" {{#if (isTrue trx)}} checked {{/if}} >   
+          </div>
+        </li>
+        <li>
+          <div class="input-box">
+            <label for="cross">CROSS TRAINING</label>
+            <input type="checkbox" id="cross" {{#if (isTrue cross)}} checked {{/if}}>   
+          </div>
+        </li>
+        <li>
+          <div class="input-box">
+            <label for="bodypump">BODY PUMP</label>
+            <input type="checkbox" id="bodypump" {{#if (isTrue bodypump)}} checked {{/if}}>   
+          </div>
+        </li>
+        <li>
+          <div class="input-box">
+            <label for="zumba">ZUMBA</label>
+            <input type="checkbox" id="zumba" {{#if (isTrue zumba)}} checked {{/if}}>   
+          </div>
+        </li>
+        <li>
+          <div class="input-box">
+            <label for="pilates">PILATES</label>
+            <input type="checkbox" id="pilates" {{#if (isTrue pilates)}} checked {{/if}}>   
+          </div>
+        </li>
+        <li>
+          <div class="input-box">
+            <label for="hipsabs">HIPS & ABS</label>
+            <input type="checkbox" id="hipsabs"{{#if (isTrue hipsabs)}} checked {{/if}} >   
+          </div>
+        </li>
+        <li>
+        <div class="input-box">
+          <label for="kickPro">ΑΓΩΝΙΣΤΙΚΟ KICK</label>
+          <input type="checkbox" id="kickPro" {{#if (isTrue kickPro)}} checked {{/if}}>   
+        </div>
+      </li>
+      <li>
+        <div class="input-box">
+          <label for="kickKids">ΠΑΙΔΙΚΟ KICK</label>
+          <input type="checkbox" id="kickKids" {{#if (isTrue kickKids)}} checked {{/if}}>   
+        </div>
+      </li>
+      </ul>
+    </form>
+    </div>
+ {{/if }}
+    <!-- Δημιουργία πίνακα με το εβδομαδιαίο πρόγραμμα του γυμναστηρίου -->
+    <table>
+        <thead> 
+          <tr>
+            <th><span class="long">Ώρα</span></th>
+            <th>
+              <span class="long">Δευτέρα</span>
+              <span class="short">Δευ</span>
+            </th>
+            <th>
+              <span class="long">Τρίτη</span>
+              <span class="short">Τρ</span>
+            </th>
+            <th>
+              <span class="long">Τετάρτη</span>
+              <span class="short">Τετ</span>
+            </th>
+            <th>
+              <span class="long">Πέμπτη</span>
+              <span class="short">Πε</span>
+            </th>
+            <th>
+              <span class="long">Παρασκευή</span>
+              <span class="short">Παρ</span>
+            </th>
+            <th>
+              <span class="long">Σάββατο</span>
+              <span class="short">Σαβ</span>
+            </th>
+            <th>
+              <span class="long">Κυριακή</span>
+              <span class="short">Κυρ</span>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody> 
+          <!-- Ώρες και δραστηριότητες -->
+          <!-- Κάθε μεγάλο κελί που είναι ορατό έχει μέσα του 4 υποκελιά τα οποία βοηθούν στην καλύτερη τοποθέτηση του περιεχομένου εντός τους -->
+          <!-- κάθε "td" αντιπροσωπεύει και μια στήλη, δηλαδή μια μέρα της εβδομάδας -->
+          <tr>
+            <td class="hour" rowspan="4"><span>09:15 - 10:00</span></td>
+            <td rowspan="7"><p class="cross">CROSS-TRAINNING (Σπύρος)</p> </td>
+            <td rowspan="7"><p class="bodypump">BODY PUMP (Νατάσα)</p> </td>
+            <td rowspan="7"><p class="zumba">ZUMBA FITNESS (Yuli Leyva)</p> </td>
+            <td rowspan="7"><p class="pilates">PILATES    (Νίκος) </p></td>
+            <td rowspan="7"><p class="hipsabs">HIPS & ABS (Νατάσα)</p> </td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>10:00 - 10:15</span></td>
+            <td rowspan="11"><p class="trx">TRX (Σπύρος) </p></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>10:15 - 10:30</span></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>10:30 - 11:00</span></td>
+            <td rowspan="15"><p class="trx">TRX (Σπύρος) </p></td>
+            <td rowspan="3"></td>
+            <td rowspan="15"></td>
+            <td rowspan="7">  <p class="trx">TRX (Σπύρος)</p> </td>
+            <td rowspan="15"><p class="trx">TRX (Σπύρος)</p></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>11:00 - 11:30</span></td>
+            <td rowspan="3"><p class="trx">TRX (Σπύρος)</p> </td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+           
+            
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>11:30 - 12:00</span></td>
+            
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr> 
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>12:00 - 12:30</span></td>
+            
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="7"><p class="trx">TRX (Σπύρος)</p></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>12:30 - 13:00</span></td>
+            
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr> 
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>13:00 - 17:00</span></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr> 
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+
+          <tr>
+            <td class="hour" rowspan="4"><span>17:00 - 18:00</span></td>
+            <td rowspan="3"><p class="kickKids"> KICK BOXING    ΠΑΙΔΙΚΟ - ΕΦΗΒΙΚΟ (Σπύρος)   &nbsp; </p></td>
+            <td rowspan="7">     <p class="trx">  TRX (Σπύρος)</p> </td>
+            <td rowspan="3"><p class="kickKids"> KICK BOXING    ΠΑΙΔΙΚΟ - ΕΦΗΒΙΚΟ    (Σπύρος)   &nbsp; </p></td>
+            <td rowspan="3"><p class="trx">  TRX (Σπύρος)</p> </td>
+            <td rowspan="3"><p class="kickKids"> KICK BOXING    ΠΑΙΔΙΚΟ - ΕΦΗΒΙΚΟ    (Σπύρος)   &nbsp;</p></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>18:00 - 19:00</span></td>
+            
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>19:00 - 20:00</span></td>
+            <td rowspan="3"> <p class="bodypump">BODY PUMP (Νατάσα)</p> </td>
+            <td rowspan="3"><p class="hipsabs">HIPS & ABS (Νατάσα)</p> </td>
+            <td rowspan="3"><p class="cross">CROSS-TRAINNING (Σπύρος)</p></td>
+            <td rowspan="3"><p class="pilates">PILATES    (Νίκος) </p>  </td>
+            <td rowspan="3"><p class="zumba">ZUMBA FITNESS (Yuli Leyva)</p></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="hour" rowspan="4"><span>20:00 - 21:30</span></td>
+            <td rowspan="3"><p class="kickPro">KICK BOXING ΑΓΩΝΙΣΤΙΚΟ (Σπύρος)</p></td>
+            <td rowspan="3"><p class="kickPro">KICK BOXING ΑΓΩΝΙΣΤΙΚΟ (Σπύρος)</p></td>
+            <td rowspan="3"><p class="kickPro">KICK BOXING ΑΓΩΝΙΣΤΙΚΟ (Σπύρος)</p></td>
+            <td rowspan="3"><p class="kickPro">KICK BOXING ΑΓΩΝΙΣΤΙΚΟ (Σπύρος)</p></td>
+            <td rowspan="3"><p class="kickPro">KICK BOXING ΑΓΩΝΙΣΤΙΚΟ (Σπύρος)</p></td>
+            <td rowspan="3"></td>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            
+            <td class="rightbord"></td>
+          </tr>
+          <tr>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border"></td>
+            <td class="border rightbord"></td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+      <!--Κουμπί για επιστροφή στην κορυφή-->
+      <button id="topBtn" title="Go to top">Top</button>
+
+<script src="main_website/js-files/program.js"></script>
+

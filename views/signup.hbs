@@ -1,0 +1,87 @@
+<!--Στην κανονική προβολή (για pc) χωρίζουμε την σελίδα σε δύο μέρη, 
+αριστερά έχουμε ενημερωτικό κείμενο ενώ δεξιά έχουμε τη φόρμα για εγγραφή νέου χρήστη -->
+<div class="split-screen">
+    <div class="left">
+        <section class="basic">
+            <h1>Συνδέσου για την πλήρη εμπειρία</h1>
+            <p>Ανακάλυψε πρώτος νέες προσφορές και θέσε προσωπικούς στόχους.</p>
+        </section>
+    </div>
+    <!--Η φόρμα εγγραφής-->
+    <div class="right">
+        <form id="form" method="post">
+            <section class="basic">
+                <h2>Εγγραφή</h2>
+                <!--Εάν ο χρήστης διαθέτει ήδη λογαριασμό, μεταφέρεται στην σελίδα της σύνδεσης-->
+                <div class="login-container">
+                    <p>Έχετε ήδη λογαριασμό; <a href="/signin-html"><strong>Σύνδεση</strong></a></p>
+                </div>
+            </section>
+            <div class="inlineContent">
+                <div class="input-container name">
+                    <label for="fname">Όνομα</label>
+                    <input required id="fname" name="username" type="text" placeholder="Όνομα"
+                        pattern="(([Α-ΩΆΈΉΊΌΏ][α-ωϊάέήίύόώ]+-)?[Α-ΩΆΈΉΊΌΏ][α-ωϊάέήίύόώ]+||[\s])+">
+                </div>
+                <div class="input-container lname">
+                    <label for="fname">Επώνυμο</label>
+                    <input required id="lname" name="userlname" type="text" placeholder="Επώνυμο"
+                        pattern="(([Α-Ω][α-ωϊάέήίύόώ]+-)?[Α-Ω][α-ωϊάέήίύόώ]+||[\s])+">
+                </div>
+
+            </div>
+
+            <div class="inlineContent">
+                <div class="input-container email">
+                    <label for="email">Εmail</label>
+                    <input id="email" name="email" type="email" placeholder="Διεύθυνση email" required>
+                </div>
+                <div class="input-container phone">
+                    <label for="phone">Τηλέφωνο</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Τηλέφωνο" pattern="\d{10}" required>
+                </div>
+
+            </div>
+
+            <div class="inlineContent">
+                <div class="input-container password">
+                    <label for="password">Κωδικός</label>
+                    <input id="password" name="password" type="password" required>
+                    <i class="fas fa-eye-slash errspan" id="hidePass" style=" cursor: pointer;"></i>
+
+                </div>
+
+                <div class="input-container password">
+                    <label for="passwordRepeat">Επιβεβαίωση κωδικού</label>
+                    <input id="passwordRepeat" name="passwordr" type="password" required>
+                    <i class="fas fa-eye-slash errspan" style=" cursor: pointer; " id="hideRepeat"></i>
+
+                </div>
+
+            </div>
+
+            <!--Ολοκλήρωση εγγραφής-->
+            <div class='align-buttons'>
+                <button id='signupButton' type='submit' class="signup-btn">Εγγραφή</button>
+
+            </div>
+
+            <!--Αναφορά σε αποδοχή όρων λειτουργίας και πολιτικής απορρήτου-->
+            <section class="basic policy">
+                <h5 style="display: inline;"><span class="final">Συνεχίζοντας αποδέχεστε τους <br><a
+                            href="/privacyPolicy"> όρους χρήσης</a>.</span></h5>
+            </section>
+    </div>
+
+
+    </form>
+</div>
+</div>
+
+
+
+
+<script src="main_website/js-files/signup.js">
+
+
+</script>

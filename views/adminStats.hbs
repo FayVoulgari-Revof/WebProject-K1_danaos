@@ -1,0 +1,60 @@
+<!--Βασικό περιεχόμενο σελίδας στόχων-->
+<div class="content">
+  <div class="stats">
+    <h2> ΧΡΗΣΤΕΣ </h2>
+    <p>Σύνολο εγγεγραμμένων χρηστών: <span class="answear"> &nbsp;{{totalUsers}}</span></p>
+    <p>Νέες εγγραφές αυτόν τον μήνα: <span class="answear"> &nbsp; {{monthlyNewUsers}}</p>
+    </p>
+    <p>Χρήστες χωρίς ενεργή συνδρομή: <span class="answear"> &nbsp;{{nonActiveSub}}</p>
+    </p>
+    <p>Χρήστες που δεν έχουν αγοράσει ποτέ συνδρομή: <span class="answear"> &nbsp; {{neverSub}}</p>
+    </p>
+
+
+
+  </div>
+  <div class="stats">
+    <canvas id="secondChart" style="height: 250px;"></canvas>
+
+  </div>
+
+  <div class="stats">
+    <canvas id="fistChart" style="height: 250px;"></canvas>
+
+  </div>
+  <div class="stats" id="lastCard">
+    <h2> ΣΥΝΔΡΟΜΕΣ </h2>
+    <p class="hihi">Δημοφιλέστερη συνδρομή: <span class="answer"> &nbsp;{{popularSub.onoma_syndromis}},
+        {{popularSub.popsub}} αγορές</p>
+    </p>
+    <p>2η δημοφιλέστερη συνδρομή: <span class="answer"> {{secPopularSub.onoma_syndromis}}, {{secPopularSub.popsub}}
+        αγορές</p>
+    </p>
+    <p>Δημοφιλέστερη συνδρομή του μήνα: <span class="answer"> &nbsp;{{monthlyPopularSub.onoma_syndromis}},
+        {{monthlyPopularSub.monthlypopsub}} αγορές</p>
+    </p>
+    <p>Νέες συνδρομές τον τρέχοντα μήνα:<span class="answer"> &nbsp; {{monthlyNewSubs}} </p>
+    </p>
+    <p style="margin-bottom: 20px;">Ενεργές συνδρομές: <span class="answer"> &nbsp;{{activeSubs}}</p>
+    </p>
+
+
+  </div>
+
+
+
+
+</div>
+<!--Κουμπί για επιστροφή στην κορυφή-->
+<button id="topBtn" title="Go to top">Top</button>
+
+
+
+
+
+<!--Καλούμε την βιβλιοθήκη chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"
+  integrity="sha512-ttHne44lbbucAUVjyStgbDTTqvNVQdIGN9gqZeai69i4OXSDNjlBd1tyCVXI/a/DqITpj9gXi84dcyG2vz4jhw=="
+  crossorigin="anonymous"></script>
+
+<script src='admin/js/adminStats.js' type="module">  </script>

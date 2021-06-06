@@ -1,0 +1,397 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;   
+    
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logo-img {
+    height: 80px;
+}
+
+/* Styling για το infobar */ 
+.infoBar {
+    background-color: #FF6700;
+    padding: 0.5em;   
+} 
+.infoBar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+  
+.infoBar a {
+    color: #fff;
+    padding: .5em ;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+
+    
+}
+
+/* Styling για το navbar */
+.navbar {
+    position:sticky;
+    background-color: rgba(9, 10, 11, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.navlist {
+    list-style-type: none;
+    
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:coral!important;
+}
+
+
+/*Styling για το dropdown menu*/
+
+  .dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+ 
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 13vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#logout {
+    color: red;
+    font-weight: 700;
+}
+
+/*Styling του split-screen*/
+.split-screen{
+    display: flex;
+    flex-direction: column;  
+    user-select: none;
+}
+
+.left, .right{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+/*Styling του αριστερού div*/
+.left{
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)), url(/images/welcome5.jpg);
+    background-size: cover;
+}
+
+
+.left .basic{
+    color: white;
+    text-align: center;
+}
+
+.left p{
+    font-weight: 400;
+    padding: 3px;
+}
+
+/*Styling του δεξιού div*/
+.box-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 30px;
+  }
+  
+.card {
+    width: 45%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #d29fa6, #f5753a);
+    color: #fff;
+    font-family:'Times New Roman', Times, serif ; 
+}
+
+
+.card .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration:underline;
+    padding: 10px 5px;
+}
+/*Όταν κάνουμε hover πάνω απο μια κάρτα, αυτή θα "πηγαίνει προς τα μέσα" */  
+.card:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Styling για το footer */
+footer {
+    display: flex;
+    position:relative;
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+
+ul{
+	list-style: none;
+    padding-left: 5px;
+    
+}
+
+.footer-col{
+   width: 40%;
+   padding: 0 20px;
+   margin-left: 30px;
+   margin-bottom: 10px;
+}
+.footer-col h5{
+	font-size: 16px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 400;
+	position: relative;
+}
+.footer-col h5::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #FF6700;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li a{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: coral;
+	padding-left: 5px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+    color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: coral;
+}
+
+
+/*Όταν οι διαστάσεις της οθόνης προβολής ξεπερνούν τα 900px πλάτος ή 700px ύψος
+ τότε η προβολή του split-screen είναι οριζόντια και έκαστο εκ των left και right καταλαμβάνουν το 50% του πλάτους.  */
+@media screen and (min-width: 900px) and (min-height: 700px) {
+    .split-screen {
+        flex-direction: row;
+        height: 85%  
+    }
+    .left,
+    .right {
+        display: flex;
+        height: auto;
+        width: 50%;   
+    }   
+}
+
+
+/* Για width μικρότερο των 965px το κουμπί που προβάλει το mobile menu (toggleButton) θα εμφανίζεται. */ 
+.mobile-menu {
+    display: none;
+}
+@media all and (max-width: 965px){
+    /*Τα προσαρμοσμένα styling των navbar και μενού επιλογών του χρήστη για την προβολή σε κινητό */
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navlist li {
+        display: block;
+        border-bottom: 1px solid coral;
+    }
+    .navlist {
+        text-align: center; 
+        padding-top: 10px; 
+        display:none;    
+    }
+ 
+    .logo {
+        width: 100%;
+        height: 40%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .active {
+        display: block;
+    }
+    .card {
+        width: 40%;
+      }
+    .overlay-content{
+        width: 100%;
+    }
+       
+}
+
+
+/* Styling για navbar του mobile menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content li{
+    text-decoration: none;
+    display: block
+}
+ 
+.overlay-content {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 400px;
+    border-bottom: 1px solid coral;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/*Για οθόνη προβολής μικρότερη απο 650px αυξάνουμε το μέγεθος των καρτών
+  ώστε να είναι το ένα κάτω απο το άλλο και να είναι πιο ευδιάκριτες*/ 
+  @media screen and (max-width: 650px) { 
+    .card {
+      width: 70%;
+    }
+}
+  
+
+  
+
+  
+
+ 
+  

@@ -1,0 +1,58 @@
+<section class="basic">
+  <h2>Πληρωμή συνδρομής</h2>
+  <p>Παρακαλούμε συμπληρώστε τα στοιχεία σας για να ολοκληρωθεί η αγορά της συνδρομής σας.</p>
+
+</section>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form>
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Στοιχεία χρέωσης</h3>
+            <label for="fname"><i class="fa fa-user"></i> Ονοματεπώνυμο</label>
+            <input type="text" id="fname" name="firstname" {{#if fname}} value={{fname}}{{/if}}
+              placeholder="Ονοματεπώνυμο" disabled>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" {{#if sEmail}} value={{sEmail}} {{/if}}
+              placeholder="Διεύθυνση email" disabled>
+            <label for="startSub"><i class="fa fa-calendar"></i> Ημερομηνία έναρξης συνδρομής</label>
+            <input style="border: none;
+  color: #2a2c2d;
+  font-size: 14px;
+  font-family: helvetica;
+  width: 180px;" type="date" id="startSub" name="startSub">
+
+
+
+          </div>
+
+
+        </div>
+        <div style="position: relative; z-index: 1;">
+
+
+          <div id="paypal-button-container"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Καλάθι <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i></span></h4>
+      <p><a href="#" class="syndromi" {{#if code}} id={{code}} {{/if}}>{{#if id}} {{id}} {{/if}} </a>
+        <hr>
+      <p>Σύνολο<span class="price" id="price" style="color:black"><strong>{{#if price}} {{price}}€{{/if}}</strong></span></p>
+      
+    </div>
+  </div>
+</div>
+
+
+<script
+  src="https://www.paypal.com/sdk/js?client-id=Aeg7GTld-tT8_AIg8qxTs0PWxgGU-5wCbHyOR40QU2c4lGKON-BBxigagSrOUNlvPj4vBvSNLkLrPlCX&currency=USD"
+  data-sdk-integration-source="button-factory"></script>
+
+<script src="/user/js-files/user-payment-js.js"> </script>

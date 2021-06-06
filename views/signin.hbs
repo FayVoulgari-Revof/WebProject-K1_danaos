@@ -1,0 +1,50 @@
+<!--Στην κανονική προβολή (για pc) χωρίζουμε την σελίδα σε δύο μέρη, 
+αριστερά έχουμε ενημερωτικό κείμενο ενώ δεξιά έχουμε τη φόρμα για σύνδεση του χρήστη -->
+<div class="split-screen">
+    <div class="left">
+        <section class="basic">
+            <h1>Συνδέσου για την πλήρη εμπειρία</h1>
+            <p>Ανακάλυψε πρώτος νέες προσφορές και θέσε προσωπικούς στόχους.</p>
+        </section>
+    </div>
+    <!--Η φόρμα σύνδεσης-->
+    <div class="right">
+        <form id='form' method="post">
+            <section class="basic">
+                <h2>Σύνδεση</h2>
+                <!--Εάν ο χρήστης δέν διαθέτει λογαριασμό, μεταφέρεται στην σελίδα της εγγραφής-->
+                <div class="login-container">
+                    <p>Δεν έχετε λογαριασμό; <a href="/signup-html"><strong>Εγγραφή</strong></a></p>
+                </div>
+            </section>
+            <div class="input-container email">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div class="input-container password">
+                <label for="password">Κωδικός</label>
+                <input id="password" name="password" type="password" required>
+                <i class="fas fa-eye-slash" id="hide" style="cursor: pointer;"></i>
+            </div>
+
+
+            <!--Ολοκλήρωση εγγραφής-->
+            <button class="signin-btn" type="submit">Σύνδεση</button>
+
+
+            <!--Υπενθύμιση κωδικού εφόσον ο χρήστης τον ξέχασε-->
+            <div class="basic forgot_password">
+                <h5><span class="final"><a href="#">Ξέχασα τον κωδικό μου</a></span></h5>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<script src="main_website/js-files/signin.js">
+
+</script>

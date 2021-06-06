@@ -1,0 +1,103 @@
+<!--Βασικό περιεχόμενο σελίδας στόχων-->
+<div class="content">
+  <div class="personal-data-form">
+    <form action="none" name="dataform">
+      <h2>Σημειώστε το βάρος και το ύψος σας. </h2>
+
+      <div class="input-box">
+        <label for="kg">Βάρος (kg) :</label>
+
+        <input type="number" id="kg" name="name" {{#if varos}} value={{varos}} {{/if}}required min="0">
+
+      </div>
+      <div class="input-box">
+        <label for="cm">Ύψος (cm) :</label>
+
+        <input type="number" id="cm" name="height" {{#if ipsos}} value={{ipsos}} {{/if}} required min="0">
+      </div>
+
+      <div class="input-box">
+        <button id="ipsos" name="sbutton" class="btn"> Υποβολή </button>
+
+      </div>
+      <hr>
+      <button type="button" name="calculate" class="btn" value="Calculate BMI" id="calculateBMI">Υπολογισμός
+        BMI</button>
+      <fieldset>
+        <legend>BMI</legend>
+        <label for="bmi" id="bmi_label">To BMI σας είναι:</label>
+        <input type="text" name="bmi" id="bmi" readonly="readonly">
+        <p id="weight_status"></p>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <div class="personal-data-form">
+    <h2>Επιλέξτε τις ημέρες που γυμναστήκατε. </h2>
+    <br>
+
+    <div id='calendar'></div>
+  </div>
+  <div class="personal-data-form" id="lastForm">
+    <form action="none" method="post">
+      <h2>Θέστε τους στόχους σας. </h2>
+
+      <div class="input-box">
+        <label for="kg_goals">Ιδανικό Βάρος (kg) :</label>
+
+        <input type="number" id="kg_goals" min="0" {{#if kgGoals}} value={{kgGoals}} {{/if}} required>
+      </div>
+      <div class="input-box">
+        <label for="workouts_goals"> Εβδομαδιαία Workouts (/6) :</label>
+
+        <input type="number" id="workouts_goals" min="1" max="6" {{#if workoutGoals}} value={{workoutGoals}} {{/if}}
+          required>
+      </div>
+      <div class="input-box">
+        <button id="goalsButton" name="sbutton" class="btn"> Υποβολή </button>
+      </div>
+    </form>
+    <div>
+      <!--Αν είναι θετικό γράφουμε πόσο απέχει ο χρήστης από τον στόχο του αλλιώς του λέμε ότι τον πέτυχε -->
+      <p id="workout_goal">{{#if (isMore count)}}Απέχετε {{count}} workouts απο τον στόχο σας!{{else}} {{#if (isNull
+        count)}} {{else}}Πετύχατε τον στόχο σας! {{/if}}{{/if}}</p>
+    </div>
+    <div>
+      <canvas id="myChart" height="180px"></canvas>
+      <!--Δημιουργούμε το canvas για το chart-->
+    </div>
+    <br>
+
+  </div>
+
+</div>
+<!--Φόρτωμα downloadable αρχείου excercise tracker-->
+
+
+<div class="download_goals">
+  <p>Το έντυπο μετρήσεων και το ατομικό πρόγραμμα γυμναστικής σου είναι διαθέσιμα με ένα κλικ: </p>
+  <a href="/images/full_tracker.pdf" download="full_tracker">
+    <img src="/images/download2.png" alt="full_tracker">
+  </a>
+</div>
+<div class="download_goals">
+  <p>Προτιμάς να σημειώνεις την πρόοδό σου σε χαρτί; Κανένα πρόβλημα! Μπορείς να κατεβάσεις τον workout tracker σε
+    εκτυπώσιμη μορφή : </p>
+  <a href="/images/Exercise-Tracker.pdf" download="monthly_goals">
+    <img src="/images/download2.png" alt="monthly_goals">
+  </a>
+</div>
+
+
+
+
+
+
+<!--Καλούμε την βιβλιοθήκη chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"
+  integrity="sha512-ttHne44lbbucAUVjyStgbDTTqvNVQdIGN9gqZeai69i4OXSDNjlBd1tyCVXI/a/DqITpj9gXi84dcyG2vz4jhw=="
+  crossorigin="anonymous"></script>
+
+<script src='user/js-files/user-goals-js.js' type="module">  </script>

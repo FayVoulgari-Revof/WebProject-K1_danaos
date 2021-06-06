@@ -1,0 +1,73 @@
+<h2 class="heading-primary">Συνδρομές</h2>
+
+<!--Δημιουργία div plan-section που περιέχει τα containers με τα πλάνα συνδρομών -->
+<div class="plan-section">
+  <div class="plan">
+    <h2 class="plan-heading">Μηνιαία</h2>
+    <h3 class="plan-price">30<span class="euro">€</span></h3>
+    {{#if Monthly}}<h5 class="mySubscription">Η ΣΥΝΔΡΟΜΗ ΜΟΥ</h5>{{/if}}
+    <ul class="plan-features">
+      <li class="plan-item">Αίθουσα οργάνων</li>
+      <li class="plan-item">Ομαδικά προγράμματα</li>
+    </ul>
+    <a href="#" id="MonthlyOrgana" class="btn buy-now">Αγορά</a>
+    <!--Κουμπί για αγορά συνδρομής-->
+  </div>
+
+  <div class="plan">
+    <h2 class="plan-heading">Ετήσια</h2>
+    <h3 class="plan-price">179<span class="euro">€</span></h3>
+    {{#if Yearly}}<h5 class="mySubscription">Η ΣΥΝΔΡΟΜΗ ΜΟΥ</h5>{{/if}}
+    <ul class="plan-features">
+      <li class="plan-item">Αίθουσα οργάνων</li>
+      <li class="plan-item">Ομαδικά προγράμματα</li>
+    </ul>
+    <a href="#" id="YearlyOrgana" class="btn buy-now">Αγορά</a>
+  </div>
+  <div class="plan">
+    <h2 class="plan-heading">Personal</h2>
+    <h3 class="plan-price">15<span class="euro">€</span></h3>
+    <ul class="plan-features">
+      <li class="plan-item">Πιστοποιημένος γυμναστής</li>
+      <li class="plan-item">Εξατομικευμένη εμπειρία </li>
+    </ul>
+    <div id="Personal" class="buyGym"> Καλέστε μας για να κλείσετε ραντεβού </div>
+  </div>
+  <div class="plan">
+
+    <h2 class="plan-heading">Kick Boxing</h2>
+    <h3 class="plan-price">40<span class="euro">€ /MHNA</span></h3>
+    {{#if kickPro}}<h5 class="mySubscription">Η ΣΥΝΔΡΟΜΗ ΜΟΥ</h5>{{/if}}
+    <ul class="plan-features">
+      <li class="plan-item">Ολιγομελή τμήματα</li>
+      <li class="plan-item">Ερασιτεχνικό & Αγωνιστικό</li>
+    </ul>
+    <a href="#" id="kickPro" class="btn buy-now">Αγορά</a>
+  </div>
+  <div class="plan">
+    <h2 class="plan-heading"> Kick Boxing</h2>
+    <h3 class="plan-price">35<span class="euro">€ /MHNA</span></h3>
+    {{#if kickKids}}<h5 class="mySubscription">Η ΣΥΝΔΡΟΜΗ ΜΟΥ</h5>{{/if}}
+    <ul class="plan-features">
+      <li class="plan-item"><strong>Παιδικό</strong> Kick Boxing</li>
+      <li class="plan-item">Ολιγομελή τμήματα</li>
+    </ul>
+    <a href="#" id="kickKids" class="btn buy-now">Αγορά</a>
+  </div>
+  <div class="plan">
+    <h2 class="plan-heading">Kick Boxing</h2>
+    <h3 class="plan-price">20<span class="euro">€ /ΣΥΝΕΔΡΙΑ</span></h3>
+    <ul class="plan-features">
+      <li class="plan-item">Kick boxing <strong>Personal</strong> </li>
+      <li class="plan-item">Εξατομικευμένη εμπειρία</li>
+    </ul>
+    <div id="kickPersonal" class="buyGym">Καλέστε μας για να κλείσετε ραντεβού </div>
+  </div>
+</div>
+
+
+
+<script src="main_website/js-files/subscriptions.js">
+
+
+</script>

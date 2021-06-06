@@ -1,0 +1,93 @@
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    background: url(/images/training-828726_1920.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+  }
+
+
+/* Styling για το infobar */ 
+
+.infoBar {
+    background-color: #FF6700;
+    padding: 0.5em;   
+} 
+.infoBar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+  
+.infoBar a {
+    color: #fff;
+    cursor: default;
+    padding: .5em ;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* Styling για το navbar */
+
+.navbar {
+    position:sticky;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.navlist {
+    list-style-type: none;
+    display: none;
+}
+
+
+
+
+
+
+.logo-img {
+    height: 80px;
+}
+
+/* Styling για το footer */
+footer {
+    display: none;
+  
+}
+
+
+
+
+/* Styling για το περιεχόμενο κειμένου της σελίδας */ 
+
+.basic{
+    margin-top: 200px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Για width μικρότερο των 965px το κουμπί που προβάλει το mobile menu (toggleButton) θα εμφανίζεται.
+ Επίσης θα προσαρμοζονται και τα περιεχόμενα της σελίδας στην προβολή για κινητό. */ 
+.mobile-menu {
+    display: none;
+}
+#myNav{
+    display: none;
+
+}

@@ -1,0 +1,455 @@
+body{
+    margin:0;
+    padding:0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    background: url(/images/contact-phone-notepad2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* Styling για το infobar */
+.infoBar {
+    background-color: #FF6700;
+    padding: 0.5em;   
+} 
+.infoBar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+  
+.infoBar a {
+    color: #fff;
+    padding: .5em ;
+    cursor: default;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+/* Styling για το navbar */
+.navbar {
+    position:sticky;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.navlist {
+    list-style-type: none;
+}
+
+.navlist li {
+    display: inline-block;
+    padding: 15px 10px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:coral !important;
+}
+.logo-img {
+    height: 80px;
+} 
+
+
+/*Styling για το dropdown menu*/
+.dropdown .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+ 
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 12vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#logout {
+    color: red;
+    font-weight: 700;
+}
+
+/*Styling για το περιεχόμενο της σελίδας επικοινωνίας */
+
+.contact {
+    position: relative;
+    padding: 1px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+/*Styling για την κεφαλίδα*/
+.contact .content {
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: black;   
+}
+
+/*Styling για το κεντρικό div container*/
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:  10px;
+    margin-bottom: 10px;
+}
+
+/*Styling για το contact-info*/
+.contact-info {
+   width: 50%; 
+   display: flex;
+   flex-direction: column;  
+}
+
+.contact-info .box {
+    display: flex;
+    position: relative;
+    padding: 20px; 
+}
+
+.contact-info .box .icon {
+     min-width: 60px;
+     height: 60px;
+     background: #FF6700;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     font-size: 22px;
+}
+
+.contact-info .box .text {
+    display: flex; 
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-info .box .text h3 {
+  margin-bottom: 0px;
+  font-weight: 500;
+  color: rgb(236, 110, 6); 
+}
+ 
+.contact-info .box .text p {
+    margin-top: 4px;
+    color: black; 
+}
+
+
+ /*Styling για το contact-form*/
+.contact-form {
+     width: 40%;
+     padding: 40px;
+     background: white;
+     user-select: none;
+     text-align: center;
+}
+
+.contact-form h2{
+     font-size: 30px;
+     color: #333;
+     font-weight: 200;
+}
+
+.input-box {
+     position: relative;
+     width: 100%;
+     margin-top:10px;
+}
+
+ 
+.input-box input, .input-box textarea{
+     width: 100%;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 10px 0;
+     border: none;
+     border-bottom: 2px solid #333;
+     outline: none;
+     resize: none;
+}
+ 
+.input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    color : grey;
+    transition: 0.5s;
+    
+}
+
+/*Όταν κάνουμε focus στο input ή όταν η τιμή στο input είναι valid τότε το span αλλάζει χρώμα, μικραίνει η γραμματοσειρά και μετακινείται πιο ψηλά.
+Όμοια και για το textarea*/ 
+
+.input-box textarea:focus ~ span,.input-box textarea:valid ~ span{
+      color:#FF6700;
+      font-size: 12px;
+      transform: translateY(-20px);
+}
+
+.input-box input[type="submit"]{
+     width: 100px;
+     background: #FF6700;
+     color: white;
+     border: none;
+     cursor: pointer;
+     padding: 10px;
+     font-size: 18px;
+}
+
+
+/* Styling για το footer */
+footer {
+    display: flex;
+    position:relative;
+    height: auto;
+    width: 100%;
+    background-color: black;
+}
+
+ul{
+	list-style: none;
+    padding-left: 5px;
+    
+}
+
+.footer-col{
+   width: 40%;
+   padding: 0 20px;
+   margin-left: 30px;
+   margin-bottom: 10px;
+}
+.footer-col h5{
+	font-size: 16px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 400;
+	position: relative;
+}
+.footer-col h5::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #FF6700;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li a{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: coral;
+	padding-left: 5px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+    color: #ffffff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: coral;
+}
+
+
+
+
+/* Για width μικρότερο των 965px το κουμπί που προβάλει το mobile menu (toggleButton) θα εμφανίζεται.
+ Επίσης θα προσαρμοζονται και τα περιεχόμενα της σελίδας στην προβολή για κινητό. */ 
+.mobile-menu {
+    display: none;
+}
+@media all and (max-width: 965px){
+    /*Τα προσαρμοσμένα styling των navbar, footer και του περιεχομένου της σελίδας επικοινωνίας για την προβολή σε κινητό */
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navlist li {
+        display: block;
+        border-bottom: 1px solid coral;
+    }
+    .navlist {
+        text-align: center; 
+        padding-top: 10px; 
+        display:none;    
+    }
+ 
+    .logo {
+        width: 100%;
+        height: 40%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .active {
+        display: block;
+    }
+    .contact{
+        padding: 1px 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contact-info{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .overlay-content{
+        width: 100%;
+    }
+      
+}
+
+/* Styling για navbar του mobile menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content li{
+    text-decoration: none;
+    display: block
+}
+ 
+.overlay-content {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 400px;
+    border-bottom: 1px solid coral;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+/*Προσαρμογή περιεχομένου για height μικρότερο των 450px*/
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+ 
+  

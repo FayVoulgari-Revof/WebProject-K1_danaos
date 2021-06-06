@@ -1,0 +1,62 @@
+<section class="contact">
+    <div class="content">
+        <h2 style="color: black;">Επικοινωνήστε μαζί μας!</h2>
+    </div>
+    <!--Δημιουργία του div container που χωρίζεται σε δύο divs, το contact-info που περιέχει πληροφορίες επικοινωνίας και το contact-form που είναι η φόρμα επικοινωνίας-->
+    <div class="container">
+        <!--To div contact-info το οποίο περιέχει τρία divs με πληροφορίες για τη διεύθυνση, για το τηλέφωνο και για το email-->
+        <div class="contact-info">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" style="color: white;"></i></div>
+                <div class="text">
+                    <h3>Διεύθυνση</h3>
+                    <p>Λεωφόρος Καλυβίων - Λαγονησίου, <br>Καλύβια Θορικού,<br> 19010</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" style="color: white;"></i></div>
+                <div class="text">
+                    <h3>Τηλέφωνο</h3>
+                    <p>2299046236</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true" style="color:white;"></i></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>k1danaos.gym@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <!--Το div contact-form όπου δημιουργούμε τη φόρμα επικοινωνίας-->
+        <div class="contact-form">
+            <form class="cform">
+                <h2>Στείλτε μας το μήνυμά σας. </h2>
+                <div class="input-box">
+                    <input type="text" name="name" id="name" {{#if fname}} value={{fname}} {{/if}} required="required"
+                        placeholder="Ονοματεπώνυμο">
+
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" {{#if sEmail}} value={{sEmail}} {{/if}}
+                        required="required" placeholder="Email">
+
+                </div>
+                <div class="input-box">
+                    <textarea required="required" id="message"></textarea>
+                    <span>Τι θα θέλατε να μάθετε...</span>
+                </div>
+                <div class="input-box">
+                    <input type="submit" name="sbutton" value="Αποστολή">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script src="/main_website/js-files/contactus.js"> </script>
