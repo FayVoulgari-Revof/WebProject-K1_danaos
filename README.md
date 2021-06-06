@@ -33,7 +33,7 @@ npm install
 npm run dev 
 ```
 
-Σε περίπτωση που θέλετε να πλοηγηθείτε απλά στην σελίδα μας, μπορείτε την να βρείτε  [εδώ](https://k1-danaos.herokuapp.com/)).
+Σε περίπτωση που θέλετε να πλοηγηθείτε απλά στην σελίδα μας, μπορείτε την να βρείτε  [εδώ](https://k1-danaos.herokuapp.com/).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
