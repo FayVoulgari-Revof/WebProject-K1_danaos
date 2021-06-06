@@ -1,9 +1,14 @@
 # WebProject-K1_danaos
-Foobar is a Python library for dealing with word pluralization.
+Ακολουθούν οδηγίες εγκατάστασης του project καθώς και οδηγίες χρήσης.
+T
+## Requirements
 
-## Installation
+For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Θα χρειαστείτε μόνο την node js και ένα global package npm για να τρέξετε την εφαρμογή μας
+Επίσης σιγουρευτείτε ότι έχετε το `git` εγκατεστήμένο στο PATH επειδή το npm μπορεί να το χρείαστεί.(Μπορείτε να βρείτε το git εδώ [here](https://git-scm.com/)).
+
+
 
 ```bash
 pip install foobar
