@@ -3,10 +3,9 @@
 T
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
 
 Θα χρειαστείτε μόνο την node js και ένα global package npm για να τρέξετε την εφαρμογή μας
-Επίσης σιγουρευτείτε ότι έχετε το `git` εγκατεστήμένο στο PATH επειδή το npm μπορεί να το χρείαστεί.(Μπορείτε να βρείτε το git εδώ [here](https://git-scm.com/)).
+Επίσης σιγουρευτείτε ότι έχετε το `git` εγκατεστήμένο στο PATH επειδή το npm μπορεί να το χρείαστεί.(Μπορείτε να βρείτε το git  [εδώ](https://git-scm.com/)).
 
 
 
