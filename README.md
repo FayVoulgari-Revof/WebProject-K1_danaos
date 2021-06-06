@@ -5,8 +5,8 @@
 ##Contributors
 
 
-<a href = "https://github.com/FayVoulgari-Revof/WebProject-K1_danaos/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = FayVoulgari-Revof/WebProject-K1_danaos"/>
+<a href="https://github.com/FayVoulgari-Revof/WebProject-K1_danaos/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=FayVoulgari-Revof/WebProject-K1_danaos" />
 </a>
 
 ## Requirements
