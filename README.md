@@ -2,7 +2,7 @@
 Ακολουθούν οδηγίες εγκατάστασης του project καθώς και οδηγίες χρήσης.
 
 
-##Contributors
+## Contributors
 
 
 <a href="https://github.com/FayVoulgari-Revof/WebProject-K1_danaos/graphs/contributors">
@@ -17,26 +17,23 @@
 
 Επίσης σιγουρευτείτε ότι έχετε το `git` εγκατεστήμένο στο PATH επειδή το npm μπορεί να το χρείαστεί.(Μπορείτε να βρείτε το git  [εδώ](https://git-scm.com/)).
 
+## Εγκατάσταση  Πακέτων
 
+Τρέξτε την παρακάτω εντολή για να μπορέσετε να εγκαταστήσετε όλα τα πακέτα που βρίσκονται ως dependency στο package.json
 
 ```bash
-pip install foobar
+npm install 
 ```
 
-## Usage
+## Ξεκινήστε την περιήγηση στην ιστοσελίδα μας
 
-```python
-import foobar
+Για να τρέξετε την εφαρμογή χρησιμοποιήστε την ετνολή :
 
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
+```bash
+npm run dev 
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
