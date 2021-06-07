@@ -36,12 +36,12 @@ npm run dev
 ## Credentials
 
 Ενδεικτικά credentials για να πλοηγηθείτε και να δείτε τα use cases της ιστοσελίδας μας :
-# Admin
+### Admin
 
 email: s.kourouklis@hotmail.com
 password: 111
 
-# User
+### User
 
 email: foto798@gmail.com
 password: 111
