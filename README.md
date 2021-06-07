@@ -33,6 +33,20 @@ npm install
 npm run dev 
 ```
 
+## Credentials
+
+Ενδεικτικά credentials για να πλοηγηθείτε και να δείτε τα use cases της ιστοσελίδας μας :
+# Admin
+
+email: s.kourouklis@hotmail.com
+password: 111
+
+# User
+
+email: foto798@gmail.com
+password: 111
+
+
 Σε περίπτωση που θέλετε να πλοηγηθείτε απλά στην σελίδα μας, μπορείτε την να βρείτε  [εδώ](https://k1-danaos.herokuapp.com/).
 
 ## License
